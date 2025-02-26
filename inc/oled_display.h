@@ -8,6 +8,6 @@
 int oled_display_init();
 
 // Função para mostrar a posição do joystick no display OLED
-void oled_display_show_position(int temperature, int humidity);
+void oled_display_show_position(const char* buffer);
 
 #endif // OLED_DISPLAY_H

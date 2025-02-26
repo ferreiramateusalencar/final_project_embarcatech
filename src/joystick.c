@@ -1,5 +1,4 @@
-#include "inc/joystick.h"
-#include "inc/wifi.h"
+#include "./inc/joystick.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
@@ -17,25 +16,4 @@ void joystick_read(int *x, int *y) {
     *y = adc_read();
     adc_select_input(1);
     *x = adc_read();
-}
-
-int main() {
-    joystick_init();
-    wifi_init();
-
-    while (1) {
-        int x, y;
-        joystick_read(&x, &y);
-
-        int temperature = y * 50 / 4095;
-        int humidity = x * 100 / 4095;
-
-        // Atualiza os dados de temperatura e umidade no Wi-Fi
-        wifi_update_data(temperature, humidity);
-
-        sleep_ms(1000); // Ajuste o tempo conforme necessário
-    }
-
-    wifi_cleanup();
-    return 0;
 }

@@ -15,18 +15,8 @@ int rgb_led_init() {
     return 0;
 }
 
-void rgb_led_set_color(int temperature, int humidity) {
-    if (temperature > 35 || temperature < 15 || humidity > 80 || humidity < 20) {
-        gpio_put(RED_PIN, 1);
-        gpio_put(GREEN_PIN, 0);
-        gpio_put(BLUE_PIN, 0);
-    } else if (temperature > 30 || temperature < 20 || humidity > 70 || humidity < 30) {
-        gpio_put(RED_PIN, 1);
-        gpio_put(GREEN_PIN, 1);
-        gpio_put(BLUE_PIN, 0);
-    } else {
-        gpio_put(RED_PIN, 0);
-        gpio_put(GREEN_PIN, 1);
-        gpio_put(BLUE_PIN, 0);
-    }
+void rgb_led_set_color(int red, int green, int blue) {
+    gpio_put(RED_PIN, red ? 1 : 0);
+    gpio_put(GREEN_PIN, green ? 1 : 0);
+    gpio_put(BLUE_PIN, blue ? 1 : 0);
 }
