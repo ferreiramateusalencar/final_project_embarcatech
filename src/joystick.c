@@ -1,5 +1,5 @@
-#include "include/joystick.h"
-#include "include/wifi.h"
+#include "inc/joystick.h"
+#include "inc/wifi.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"

@@ -58,8 +58,12 @@ target_link_libraries(final_project_embarcatech
 # Add the standard include files to the build
 target_include_directories(final_project_embarcatech PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
-        ${CMAKE_CURRENT_LIST_DIR}/src/include
+        ${CMAKE_CURRENT_LIST_DIR}/inc
+        ${CMAKE_CURRENT_LIST_DIR}/lib/arch
         ${PICO_SDK_PATH}/lib/lwip/src/include
+        ${PICO_SDK_PATH}/lib/lwip/src/include/ipv4
+        ${PICO_SDK_PATH}/lib/lwip/src/include/ipv6
+        ${PICO_SDK_PATH}/lib/lwip/port/pico/include
         ${PICO_SDK_PATH}/src/rp2_common/hardware_adc/include
 )
 
@@ -74,5 +78,9 @@ target_link_libraries(final_project_embarcatech
         lwipopts
 )
 
-pico_add_extra_outputs(final_project_embarcatech)
+# Add the sys_arch.c file to the build
+target_sources(final_project_embarcatech PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}/lib/arch/sys_arch.c
+)
 
+pico_add_extra_outputs(final_project_embarcatech)

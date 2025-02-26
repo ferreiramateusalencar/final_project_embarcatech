@@ -4,10 +4,10 @@
 #include "hardware/timer.h"
 #include "hardware/clocks.h"
 #include "pico/cyw43_arch.h"
-#include "src/include/joystick.h"
-#include "src/include/oled_display.h"
-#include "src/include/rgb_led.h"
-#include "src/include/wifi.h"
+#include "inc/joystick.h"
+#include "inc/oled_display.h"
+#include "inc/rgb_led.h"
+#include "inc/wifi.h"
 
 // I2C defines
 #define I2C_PORT i2c0

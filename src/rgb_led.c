@@ -1,4 +1,4 @@
-#include "include/rgb_led.h"
+#include "inc/rgb_led.h"
 #include "pico/stdlib.h"
 
 #define RED_PIN 13

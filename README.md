@@ -1,6 +1,6 @@
 # rp2040 Joystick Project
 
-Este projeto utiliza um Raspberry Pi Pico (RP2040) para criar uma interface interativa com um joystick, uma tela OLED, uma matriz de LED 5x5 e um LED RGB. O objetivo principal é ler a posição do joystick e enviar essas informações via Wi-Fi.
+Este projeto utiliza um Raspberry Pi Pico (RP2040) para criar uma interface interativa com um joystick, uma tela OLED e um LED RGB. O objetivo principal é ler a posição do joystick, que simula um sensor DHT11 (onde o eixo Y do joystick simula o sensor de Temperatura e o eixo X o sensor de umidade) e enviar essas informações via Wi-Fi.
 
 ## Estrutura do Projeto
 
@@ -18,7 +18,6 @@ rp2040-joystick-project
 │   └── include
 │       ├── joystick.h       # Cabeçalho para o joystick
 │       ├── oled_display.h   # Cabeçalho para a tela OLED
-│       ├── led_matrix.h     # Cabeçalho para a matriz de LED
 │       ├── rgb_led.h        # Cabeçalho para o LED RGB
 │       └── wifi.h           # Cabeçalho para a funcionalidade Wi-Fi
 ├── CMakeLists.txt           # Script de configuração do CMake
@@ -32,11 +31,9 @@ rp2040-joystick-project
 
 2. **Tela OLED**: A tela OLED exibe informações sobre a posição do joystick e outras mensagens relevantes.
 
-3. **Matriz de LED 5x5**: A matriz de LED é utilizada para fornecer feedback visual sobre a posição do joystick, acendendo LEDs específicos com base nas coordenadas.
+3. **LED RGB**: O LED RGB muda de cor com base na posição do joystick, proporcionando uma indicação visual adicional.
 
-4. **LED RGB**: O LED RGB muda de cor com base na posição do joystick, proporcionando uma indicação visual adicional.
-
-5. **Conexão Wi-Fi**: O projeto se conecta a uma rede Wi-Fi para enviar as informações de posição do joystick para um servidor ou outro dispositivo.
+4. **Conexão Wi-Fi**: O projeto se conecta a uma rede Wi-Fi para enviar as informações de posição do joystick para um servidor ou outro dispositivo.
 
 ## Instruções de Instalação
 

@@ -5,8 +5,8 @@
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
-#include "include/ssd1306_font.h"
-#include "include/ssd1306_i2c.h"
+#include "inc/ssd1306_font.h"
+#include "inc/ssd1306_i2c.h"
 
 // Calcular quanto do buffer será destinado à área de renderização
 void calculate_render_area_buffer_length(struct render_area *area) {
@@ -245,4 +245,12 @@ void ssd1306_draw_bitmap(ssd1306_t *ssd, const uint8_t *bitmap) {
 
         ssd1306_send_data(ssd);
     }
+}
+
+void ssd1306_i2c_init() {
+    i2c_init(i2c_default, 400 * 1000);
+    gpio_set_function(4, GPIO_FUNC_I2C);
+    gpio_set_function(5, GPIO_FUNC_I2C);
+    gpio_pull_up(4);
+    gpio_pull_up(5);
 }

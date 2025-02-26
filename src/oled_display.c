@@ -1,4 +1,4 @@
-#include "oled_display.h"
+#include "inc/oled_display.h"
 #include "ssd1306.h"
 #include "ssd1306_font.h"
 #include "ssd1306_i2c.h"
