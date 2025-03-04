@@ -36,32 +36,32 @@ O projeto é organizado da seguinte forma:
 
 ```
 rp2040-joystick-project
-├── .vscode
-├── assets                   #
-├── bin                      #
-├── inc
-│   ├── joystick.h           # Cabeçalho para o joystick
-│   ├── lwipopts.h           # 
-│   ├── oled_display.h       # Cabeçalho para a tela OLED
-│   ├── ssd1306_font.h       # 
-│   ├── ssd1306_i2c.h        # 
-│   ├── ssd1306.h            #
-│   └── wifi.h               # Cabeçalho para a funcionalidade
-├── src
-│   ├── joystick.c           # Implementação das funções do 
-|   ├── oled_display.c       # Controle da tela OLED
-│   ├── wifi.c               # Gerenciamento da conexão Wi-Fi
-│   ├── ssd1306.c            # ssd1306
-|
-├── .gitattributes           # 
-├── .gitignore               # 
-├── CMakeLists.txt           # Script de configuração do CMake
-├── diagram.json             # 
-├── LICENSE                  #
-├── main.c                   # 
-├── pico_sdk_import.cmake    # Importação do SDK do Raspberry Pi 
-├── README.md                # Documentação do projeto
-└── wokwi.toml               # 
+├── .vscode                   # Configurações do Visual Studio Code para o projeto (extensões, tarefas, etc.)
+├── assets                    # Pasta para armazenar recursos estáticos do projeto (imagens, vódeos, etc.)
+├── bin                       # Pasta onde os binários compilados serão armazenados
+├── inc                        # Diretório para arquivos de cabeçalho (.h)
+│   ├── joystick.h            # Cabeçalho para o joystick, definindo funções e estruturas relacionadas ao controle do joystick
+│   ├── lwipopts.h            # Arquivo de configuração das opções do LWIP (pilha de rede) para personalização de rede
+│   ├── oled_display.h        # Cabeçalho para controle da tela OLED, declara funções para manipular o display
+│   ├── ssd1306_font.h        # Definições de fontes utilizadas na tela OLED (baseadas no chip SSD1306)
+│   ├── ssd1306_i2c.h         # Cabeçalho para comunicação I2C com o display SSD1306 (protocolo de comunicação)
+│   ├── ssd1306.h             # Cabeçalho principal para controle do display SSD1306
+│   └── wifi.h                # Cabeçalho para a funcionalidade de Wi-Fi, com funções para gerenciar a conexão
+├── src                        # Diretório para o código fonte (.c)
+│   ├── joystick.c            # Implementação das funções de controle do joystick, leitura de entradas, etc.
+│   ├── oled_display.c        # Implementação das funções de controle da tela OLED
+│   ├── wifi.c                # Implementação do gerenciamento da conexão Wi-Fi, configuração e reconexão
+│   ├── ssd1306.c             # Implementação das funções de comunicação e controle do display SSD1306
+├── .gitattributes            # Arquivo de configuração do Git para definir atributos de arquivos
+├── .gitignore                # Lista de arquivos e pastas a serem ignorados pelo Git
+├── CMakeLists.txt            # Script de configuração do CMake, que define como o projeto será compilado
+├── diagram.json              # Diagrama relacionada à arquitetura do projeto
+├── LICENSE                   # Arquivo de licença do projeto, especificando os termos de uso e distribuição
+├── main.c                    # Arquivo principal, contém o ponto de entrada do programa
+├── pico_sdk_import.cmake     # Arquivo de configuração do CMake para importar o SDK do Raspberry Pi Pico
+├── README.md                 # Documento de documentação do projeto
+└── wokwi.toml                # Arquivo de configuração para o simulador Wokwi
+
 ```
 
 ## Componentes do Projeto
