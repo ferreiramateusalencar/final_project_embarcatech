@@ -56,4 +56,13 @@ struct render_area {
     int buffer_length;
 };
 
+typedef struct {
+  uint8_t width, height, pages, address;
+  i2c_inst_t * i2c_port;
+  bool external_vcc;
+  uint8_t *ram_buffer;
+  size_t bufsize;
+  uint8_t port_buffer[2];
+} ssd1306_t;
+
 #endif

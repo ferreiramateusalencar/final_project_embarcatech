@@ -14,3 +14,4 @@ CMakeUserPresets.json
 build/
 output/
 src/output/
+inc/wifi_credentials.h

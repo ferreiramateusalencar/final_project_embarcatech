@@ -2,12 +2,20 @@
 #define OLED_DISPLAY_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
 #include "ssd1306.h"
 
-// Função para inicializar o display OLED
-int oled_display_init();
+// Definições dos pinos SDA e SCL para I2C
+extern const uint I2C_SDA;
+extern const uint I2C_SCL;
 
-// Função para mostrar a posição do joystick no display OLED
-void oled_display_show_position(const char* buffer);
+// Variáveis externas para temperatura e umidade
+extern float temperatura;
+extern float umidade;
+
+// Função para inicializar o display OLED
+int oled_display_init(void);
 
 #endif // OLED_DISPLAY_H

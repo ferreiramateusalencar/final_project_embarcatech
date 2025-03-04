@@ -53,9 +53,8 @@ add_executable(final_project_embarcatech
     main.c
     src/joystick.c
     src/oled_display.c
-    src/rgb_led.c
-    src/ssd1306.c
     src/ssd1306_i2c.c
+    src/wifi.c
 )
 
 pico_set_program_name(final_project_embarcatech "final_project_embarcatech")
@@ -67,7 +66,9 @@ pico_enable_stdio_usb(final_project_embarcatech 1)
 
 # Adiciona a biblioteca padrão ao build
 target_link_libraries(final_project_embarcatech
-        pico_stdlib)
+    pico_stdlib
+    pico_cyw43_arch_lwip_threadsafe_background
+)
 
 # Adiciona os arquivos de inclusão padrão ao build
 target_include_directories(final_project_embarcatech PRIVATE
@@ -82,6 +83,7 @@ target_link_libraries(final_project_embarcatech
         hardware_timer
         hardware_clocks
         hardware_adc
+        pico_cyw43_arch_lwip_threadsafe_background
 )
 
 pico_add_extra_outputs(final_project_embarcatech)
