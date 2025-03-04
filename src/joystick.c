@@ -1,4 +1,5 @@
 #include "inc/joystick.h"
+#include "inc/sensor_data.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
@@ -8,9 +9,6 @@
 #define RED_PIN 13
 #define GREEN_PIN 11
 #define BLUE_PIN 12
-
-float temperatura = 0;
-float umidade = 0;
 
 int joystick_init() {
     stdio_init_all();
@@ -35,7 +33,6 @@ void joystick_read(int *x, int *y) {
     *y = adc_read();
     adc_select_input(1);
     *x = adc_read();
-    printf("Joystick lido: X=%d, Y=%d\n", *x, *y);
 }
 
 void rgb_led_set_color(uint8_t r, uint8_t g, uint8_t b) {
@@ -47,7 +44,6 @@ void rgb_led_set_color(uint8_t r, uint8_t g, uint8_t b) {
 void process_joystick_data() {
     int x, y;
     joystick_read(&x, &y);
-    printf("Leitura do joystick: X=%d, Y=%d\n", x, y);
 
     temperatura = y * 50 / 4095;
     umidade = x * 100 / 4095;
@@ -64,6 +60,5 @@ void process_joystick_data() {
         rgb_led_set_color(1, 0, 0); // Vermelho
         status = "Péssimas condições";
     }
-
     printf("Temperatura: %.2f Graus Celsius, Umidade: %.2f%%, Status: %s\n", temperatura, umidade, status);
 }

@@ -1,67 +1,50 @@
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <stdio.h>
 #include "pico/stdlib.h"
-#include "pico/binary_info.h"
-#include "./inc/ssd1306.h"
 #include "hardware/i2c.h"
+#include "./inc/joystick.h"
+#include "./inc/sensor_data.h"
+#include "./inc/ssd1306.h"
+#include "./inc/ssd1306_font.h"
 
-const uint I2C_SDA = 14;
-const uint I2C_SCL = 15;
+#define I2C_PORT i2c1
+#define I2C_SDA 14
+#define I2C_SCL 15
+#define endereco 0x3C
 
-extern float temperatura;  // Variável externa para temperatura
-extern float umidade;      // Variável externa para umidade
+#define WIDTH 128
+#define HEIGHT 64
+
+extern float temperatura;
+extern float umidade;
+
+static ssd1306_t ssd;
 
 int oled_display_init() {
-    stdio_init_all();  // Inicializa os tipos stdio padrão presentes ligados ao binário
-
-    // Inicialização do I2C
-    i2c_init(i2c1, ssd1306_i2c_clock * 1000); 
+    printf("Inicializando display OLED...\n");
+    i2c_init(I2C_PORT, 400 * 1000);
     gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
     gpio_pull_up(I2C_SDA);
     gpio_pull_up(I2C_SCL);
 
-    // Processo de inicialização completo do OLED SSD1306
-    ssd1306_init();
-
-    // Preparar área de renderização para o display (ssd1306_width pixels por ssd1306_n_pages páginas)
-    struct render_area frame_area = {
-        start_column : 0,
-        end_column : ssd1306_width - 1,
-        start_page : 0,
-        end_page : ssd1306_n_pages - 1
-    };
-
-    calculate_render_area_buffer_length(&frame_area);
-
-    // Zera o display inteiro
-    uint8_t ssd[ssd1306_buffer_length];
-    memset(ssd, 0, ssd1306_buffer_length);
-    render_on_display(ssd, &frame_area);
-
-    // Inicializa o texto a ser exibido
-    char temp_text[20];  // Buffer para a string da temperatura
-    char hum_text[20];   // Buffer para a string da umidade
-
-    // Formatar a string com os valores de temperatura e umidade
-    sprintf(temp_text, "Temperatura: %.2f C", temperatura);
-    sprintf(hum_text, "Umidade: %.2f%%", umidade);
-
-    // Exibir as mensagens no display
-    int y = 0;
-    ssd1306_draw_string(ssd, 5, y, temp_text);
-    y += 8;  // Aumenta o y para a próxima linha
-    ssd1306_draw_string(ssd, 5, y, hum_text);
-
-    // Renderizar as informações no display
-    render_on_display(ssd, &frame_area);
-
-    // Espera infinitamente para manter as informações no display
-    while (true) {
-        sleep_ms(1000);  // Aguarda 1 segundo entre atualizações
-    }
+    ssd1306_init(&ssd, WIDTH, HEIGHT, false, endereco, I2C_PORT);
+    ssd1306_fill(&ssd, false);
+    ssd1306_send_data(&ssd);
 
     return 0;
+}
+
+void oled_display_update() {
+    char temp_str[32];
+    char hum_str[32];
+
+    snprintf(temp_str, sizeof(temp_str), "TEMPERATURA: %.2f%%", temperatura);
+    snprintf(hum_str, sizeof(hum_str), "UMIDADE: %.2f%%", umidade);
+
+    ssd1306_fill(&ssd, false);
+    ssd1306_draw_string(&ssd, "DADOS DO SENSOR", 8, 10);
+    ssd1306_draw_string(&ssd, temp_str, 20, 30);
+    ssd1306_draw_string(&ssd, hum_str, 15, 48);
+    ssd1306_send_data(&ssd);
 }

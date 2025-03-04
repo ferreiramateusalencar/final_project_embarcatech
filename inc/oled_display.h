@@ -17,5 +17,6 @@ extern float umidade;
 
 // Função para inicializar o display OLED
 int oled_display_init(void);
+void oled_display_update();
 
 #endif // OLED_DISPLAY_H

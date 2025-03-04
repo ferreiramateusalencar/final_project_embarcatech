@@ -53,7 +53,7 @@ add_executable(final_project_embarcatech
     main.c
     src/joystick.c
     src/oled_display.c
-    src/ssd1306_i2c.c
+    src/ssd1306.c
     src/wifi.c
 )
 
@@ -74,6 +74,7 @@ target_link_libraries(final_project_embarcatech
 target_include_directories(final_project_embarcatech PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
         ${CMAKE_CURRENT_LIST_DIR}/inc
+        ${CMAKE_CURRENT_LIST_DIR}/lib
         ${PICO_SDK_PATH}/src/rp2_common/hardware_adc/include
 )
 

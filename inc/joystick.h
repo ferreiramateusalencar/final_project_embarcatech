@@ -1,9 +1,6 @@
 #ifndef JOYSTICK_H
 #define JOYSTICK_H
 
-extern float temperatura;
-extern float umidade;
-
 int joystick_init();
 void joystick_read(int *x, int *y);
 void process_joystick_data();

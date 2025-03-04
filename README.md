@@ -39,19 +39,21 @@ rp2040-joystick-project
 ├── .vscode                   # Configurações do Visual Studio Code para o projeto (extensões, tarefas, etc.)
 ├── assets                    # Pasta para armazenar recursos estáticos do projeto (imagens, vódeos, etc.)
 ├── bin                       # Pasta onde os binários compilados serão armazenados
-├── inc                        # Diretório para arquivos de cabeçalho (.h)
+├── inc                       # Diretório para arquivos de cabeçalho (.h)
 │   ├── joystick.h            # Cabeçalho para o joystick, definindo funções e estruturas relacionadas ao controle do joystick
-│   ├── lwipopts.h            # Arquivo de configuração das opções do LWIP (pilha de rede) para personalização de rede
 │   ├── oled_display.h        # Cabeçalho para controle da tela OLED, declara funções para manipular o display
+│   ├── sensor_data.h         # Simulação de uma header (.h) de um sensor DHT11
 │   ├── ssd1306_font.h        # Definições de fontes utilizadas na tela OLED (baseadas no chip SSD1306)
 │   ├── ssd1306_i2c.h         # Cabeçalho para comunicação I2C com o display SSD1306 (protocolo de comunicação)
 │   ├── ssd1306.h             # Cabeçalho principal para controle do display SSD1306
 │   └── wifi.h                # Cabeçalho para a funcionalidade de Wi-Fi, com funções para gerenciar a conexão
-├── src                        # Diretório para o código fonte (.c)
+├── lib                       # Diretório para as Bibliotecas internas
+│   └── lwipopts.h            # Arquivo de configuração das opções do LWIP (pilha de rede) para personalização de rede
+├── src                       # Diretório para o código fonte (.c)
 │   ├── joystick.c            # Implementação das funções de controle do joystick, leitura de entradas, etc.
 │   ├── oled_display.c        # Implementação das funções de controle da tela OLED
-│   ├── wifi.c                # Implementação do gerenciamento da conexão Wi-Fi, configuração e reconexão
 │   ├── ssd1306.c             # Implementação das funções de comunicação e controle do display SSD1306
+│   └── wifi.c                # Implementação do gerenciamento da conexão Wi-Fi, configuração e reconexão
 ├── .gitattributes            # Arquivo de configuração do Git para definir atributos de arquivos
 ├── .gitignore                # Lista de arquivos e pastas a serem ignorados pelo Git
 ├── CMakeLists.txt            # Script de configuração do CMake, que define como o projeto será compilado
