@@ -13,7 +13,7 @@
 void wifi_init();
 
 // Função para atualizar os dados de temperatura e umidade
-void wifi_update_data(int nova_temperatura, int nova_umidade);
+void wifi_update_data(float nova_temperatura, float nova_umidade);
 
 // Função para limpar recursos do Wi-Fi
 void wifi_cleanup();

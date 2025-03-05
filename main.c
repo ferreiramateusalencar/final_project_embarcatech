@@ -22,15 +22,16 @@ int main() {
     }
     printf("Joystick inicializado com sucesso\n");
     
-    // Inicializa o Wi-Fi e o servidor HTTP
-    wifi_init();
-
+    
     // Inicializa o display OLED
     if (oled_display_init() != 0) {
         printf("Erro ao inicializar o display OLED\n");
         return 1;
     }
     printf("Display OLED inicializado com sucesso\n");
+    
+    // Inicializa o Wi-Fi e o servidor HTTP
+    wifi_init();
 
     while (1) {
         // Processa os dados do joystick

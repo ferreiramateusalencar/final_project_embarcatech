@@ -6,17 +6,18 @@
 #include "lwip/tcp.h"
 #include "./lib/lwipopts.h"
 #include "./inc/wifi.h"
-#include "./inc/wifi_credentials.h"
+#include "./inc/wifi_credentials.h" //Crie esse arquivo e adicione suas credenciais de rede Wi-Fi, conforme o exemplo comentado no final do código
+#include "./inc/joystick.h"
 
 extern float temperatura;
 extern float umidade;
 
 #define HTTP_RESPONSE_TEMPLATE "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n" \
                                "<!DOCTYPE html><html><body>" \
-                               "<h1>Dados de Temperatura e Umidade</h1>" \
-                               "<p>Temperatura: %d</p>" \
-                               "<p>Umidade: %d</p>" \
-                               "</body></html>\r\n"
+                               "<h1>Dados do sensor</h1>" \
+                               "<p>Temperatura: %d &deg;C</p>" \
+                               "<p>Umidade: %d%%</p>" \
+                               "</body></html>\r\n" 
 
 static err_t http_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) {
     if (p == NULL) {
@@ -56,22 +57,29 @@ static void start_http_server(void) {
 }
 
 void wifi_init() {
+    // Inicializa o chip Wi-Fi
     if (cyw43_arch_init()) {
-        printf("Erro ao inicializar o Wi-Fi\n");
+        printf("Wi-Fi init failed\n");
         return;
     }
+    // Habilita o modo estação
+    cyw43_arch_enable_sta_mode();
 
-    if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 10000)) {
-        printf("Falha ao conectar ao Wi-Fi\n");
+    printf("Conectando o Wi-Fi...\n");
+    if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
+        printf("Falha na conexão.\n");
         return;
+    } else {
+        printf("Conectado!\n");
+        uint8_t *ip_address = (uint8_t*)&(cyw43_state.netif[0].ip_addr.addr);
+        printf("IP address %d.%d.%d.%d\n", ip_address[0], ip_address[1], ip_address[2], ip_address[3]);
     }
 
-    printf("Conectado ao Wi-Fi\n");
-    start_http_server();
+    printf("Sistema de monitoramento está Online\n");
+    start_http_server(); // Inicia o servidor HTTP após conectar ao Wi-Fi
 }
 
-// Função para atualizar os dados de temperatura e umidade
-void wifi_update_data(int nova_temperatura, int nova_umidade) {
+void wifi_update_data(float nova_temperatura, float nova_umidade) {
     temperatura = nova_temperatura;
     umidade = nova_umidade;
 }
@@ -80,3 +88,13 @@ void wifi_update_data(int nova_temperatura, int nova_umidade) {
 void wifi_cleanup() {
     cyw43_arch_deinit();
 }
+
+/*
+#ifndef WIFI_CREDENTIALS_H
+#define WIFI_CREDENTIALS_H
+
+#define WIFI_SSID "nome_da_rede"
+#define WIFI_PASSWORD "senha_da_rede"
+
+#endif // WIFI_CREDENTIALS_H
+*/
