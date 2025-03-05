@@ -2,7 +2,7 @@
 <h1 align="center"><img align="center" style="border-radius: 100%;" src="https://moodle.embarcatech.cepedi.org.br/pluginfile.php/1/theme_moove/logo/1733422525/Group%20658.png" width="300px;" alt=""><br>Projeto FInal Embarcatech</h1>
 
 <p align="center">
-   Este projeto utiliza um Raspberry Pi Pico (RP2040) para criar uma interface interativa com um joystick, uma tela OLED e um LED RGB. O objetivo principal é ler a posição do joystick, que simula um sensor DHT11 (onde o eixo Y do joystick simula o sensor de Temperatura e o eixo X o sensor de umidade) e enviar essas informações via Wi-Fi.
+   Este projeto utiliza um Raspberry Pi Pico (RP2040) para criar uma interface interativa com um joystick, uma tela OLED e um LED RGB. O objetivo principal é ler a posição do joystick, que simula um sensor DHT11 (onde o eixo Y do joystick simula o sensor de Temperatura e o eixo X o sensor de umidade) e enviar essas informações para o Display Oled SDD 1306, além do envio das infomações ao monitor serial via UART e ao navegador via Wi-Fi.
 </p>
 
 <h4 align="center">
@@ -35,17 +35,17 @@ Tabela de conteúdos
 O projeto é organizado da seguinte forma:
 
 ```
-rp2040-joystick-project
+final_project_embarcatech
 ├── .vscode                   # Configurações do Visual Studio Code para o projeto (extensões, tarefas, etc.)
 ├── assets                    # Pasta para armazenar recursos estáticos do projeto (imagens, vódeos, etc.)
 ├── bin                       # Pasta onde os binários compilados serão armazenados
+├── inc                       # Pasta com arquivos temporários gerados no Compile
 ├── inc                       # Diretório para arquivos de cabeçalho (.h)
 │   ├── joystick.h            # Cabeçalho para o joystick, definindo funções e estruturas relacionadas ao controle do joystick
 │   ├── oled_display.h        # Cabeçalho para controle da tela OLED, declara funções para manipular o display
-│   ├── sensor_data.h         # Simulação de uma header (.h) de um sensor DHT11
 │   ├── ssd1306_font.h        # Definições de fontes utilizadas na tela OLED (baseadas no chip SSD1306)
-│   ├── ssd1306_i2c.h         # Cabeçalho para comunicação I2C com o display SSD1306 (protocolo de comunicação)
 │   ├── ssd1306.h             # Cabeçalho principal para controle do display SSD1306
+│   ├── wifi_credentials.h    # Arquivo com as credenciais de conexão. ATENÇÃO: esse arquivo deve ser criado, leia comentários no arquivo wifi.h
 │   └── wifi.h                # Cabeçalho para a funcionalidade de Wi-Fi, com funções para gerenciar a conexão
 ├── lib                       # Diretório para as Bibliotecas internas
 │   └── lwipopts.h            # Arquivo de configuração das opções do LWIP (pilha de rede) para personalização de rede
@@ -57,7 +57,7 @@ rp2040-joystick-project
 ├── .gitattributes            # Arquivo de configuração do Git para definir atributos de arquivos
 ├── .gitignore                # Lista de arquivos e pastas a serem ignorados pelo Git
 ├── CMakeLists.txt            # Script de configuração do CMake, que define como o projeto será compilado
-├── diagram.json              # Diagrama relacionada à arquitetura do projeto
+├── diagram.json              # Diagrama relacionada à arquitetura do projeto na simulação Wokwi
 ├── LICENSE                   # Arquivo de licença do projeto, especificando os termos de uso e distribuição
 ├── main.c                    # Arquivo principal, contém o ponto de entrada do programa
 ├── pico_sdk_import.cmake     # Arquivo de configuração do CMake para importar o SDK do Raspberry Pi Pico
@@ -68,11 +68,11 @@ rp2040-joystick-project
 
 ## Componentes do Projeto
 
-1. **Joystick**: O joystick é utilizado para capturar a posição do usuário. As coordenadas X e Y são lidas e processadas para controlar outros componentes.
+1. **Joystick**: O joystick (simulando um sensor DHT11) é utilizado para capturar a posição do usuário. As coordenadas X e Y são lidas e processadas para controlar outros componentes.
 
 2. **Tela OLED**: A tela OLED exibe informações sobre a posição do joystick e outras mensagens relevantes.
 
-3. **LED RGB**: O LED RGB muda de cor com base na posição do joystick, proporcionando uma indicação visual adicional.
+3. **LED RGB**: O LED RGB muda de cor com base na posição no status da condição do ambiente simulado, proporcionando uma indicação visual adicional.
 
 4. **Conexão Wi-Fi**: O projeto se conecta a uma rede Wi-Fi para enviar as informações de posição do joystick para um servidor ou outro dispositivo.
 
@@ -99,10 +99,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
   - Abra o terminal de comando Git Bash 
   - Clone o repositório do GitHub com o comando:
 ```
-$ git clone https://github.com/ferreiramateusalencar/RP2040-UART.git
+$ git clone https://github.com/ferreiramateusalencar/final_project_embarcatech.git
 ```
 - Opção 2:
-  - No repósitorio [Animation-BitDogLab](https://github.com/ferreiramateusalencar/RP2040-UART) aperte o Botão <i><>code</i>
+  - No repósitorio [Animation-BitDogLab](https://github.com/ferreiramateusalencar/final_project_embarcatech.git) aperte o Botão <i><>code</i>
   - Aperte a opção <i>Dowload ZIP</i>
 
 
@@ -111,7 +111,7 @@ $ git clone https://github.com/ferreiramateusalencar/RP2040-UART.git
 #### Wokwi Web
 - Entre no navegador e digite [Wokwi.com]()
 - Faça Upload dos Arquivos <i>diagram.json</i>
-- Faça upload do aquivo RP2040-UART <i>RP2040-UART.c</i> e da pasta <i>src/</i>
+- Faça upload do aquivo main <i>main.c</i> e dos arquivos das pastas <i>inc/</i>, <i>lib/</i> e <i>src/</i>
 
 #### Extensão Wokwi
 - Abra o Visual Studio
@@ -121,8 +121,9 @@ $ git clone https://github.com/ferreiramateusalencar/RP2040-UART.git
 ```
 [wokwi]
 version = 1
-firmware = 'build/main.hex'
-elf = 'build/main.elf'
+firmware = 'build/final_project_embarcatech.hex'
+elf = 'build/final_project_embarcatech.elf'
+rfc2217ServerPort = 4000
 ```
 - Abra o arquivo <i>diagram.json</i>
 
@@ -138,7 +139,7 @@ elf = 'build/main.elf'
 - Na aba da extensão [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico), aperte para Importar o projeto
 - Compile o projeto
 - Entre na pasta <i>build/</i>
-- Cole o arquivo <i>main.uf2</i> no armazenamento placa BitDog
+- Cole o arquivo <i>final_project_embarcatech.uf2</i> no armazenamento placa BitDog
 <br>
 
 ---
@@ -146,7 +147,7 @@ elf = 'build/main.elf'
 ## 🎥 Imagens do Projeto
 
 ### 💿 Diagrama Visual do Projeto
-<p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/RP2040-UART/blob/main/assets/image/diagram.png"></p>
+<p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/diagram.png"></p>
 
 ### 💿 Video do Projeto na Extensão Wokwi
 
@@ -158,7 +159,7 @@ https://github.com/user-attachments/assets/1cb5ff3f-3bc1-4b1f-a468-651a5e83f5a7
 
 
 
-- Dowload HD video completo: https://github.com/ferreiramateusalencar/RP2040-UART/blob/main/assets/video/demonstration.mp4
+- Dowload HD video completo: https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/video/demonstration.mp4
 
 ---
 
@@ -187,7 +188,7 @@ Mentor: MANOEL MESSIAS DA SILVA JUNIOR
 
 <table>
   <tr>
-    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86336670?v=4" width="100px;"/><br/><a href="https://github.com/ferreiramateusalencar">Mateus A. Ferreira<a/><br/><br/><a href="https://github.com/ferreiramateusalencar/Conversor-de-Unidades-C" title="Líder">🌐</a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86336670?v=4" width="100px;"/><br/><a href="https://github.com/ferreiramateusalencar">Mateus A. Ferreira<a/><br/><br/><a href="https://github.com/ferreiramateusalencar/Conversor-de-Unidades-C" title="Líder & desenvolvedor">🌐</a></td>
   </tr>
 </table>
       
