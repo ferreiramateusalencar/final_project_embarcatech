@@ -5643,7 +5643,7 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
 .iplt           0x10012c84        0x0
  .iplt          0x10012c84        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10012c88    0x396c8
+.rodata         0x10012c88    0x396c0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
                 0x10012c88     0x175c CMakeFiles/final_project_embarcatech.dir/main.c.obj
@@ -5656,341 +5656,341 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x100143e4       0x34 CMakeFiles/final_project_embarcatech.dir/src/oled_display.c.obj
  .rodata.ssd1306_draw_char
                 0x100143e4       0xd8 CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
- .rodata.font   0x100144bc      0x148 CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
+ .rodata.font   0x100144bc      0x140 CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
  .rodata.http_callback.str1.4
-                0x10014604       0xa7 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
+                0x100145fc       0xa7 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
  .rodata.wifi_init.str1.4
-                0x10014604       0xc5 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
+                0x100145fc       0xc5 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
  .rodata.panic.str1.4
-                0x10014604       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x100145fc       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x10014604       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
+                0x100145fc       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.user_irq_claim_unused.str1.4
-                0x10014604       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10014604        0x4 
+                0x100145fc       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100145fc        0x4 
  .rodata.at_the_end_of_time
-                0x10014608        0x8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
-                0x10014608                at_the_end_of_time
+                0x10014600        0x8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
+                0x10014600                at_the_end_of_time
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10014610       0x22 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x10014608       0x22 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x10014610        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10014608        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x10014610       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x10014608       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x10014610        0x1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x10014608        0x1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .rodata.__wrap_malloc.str1.4
-                0x10014610        0xe CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
+                0x10014608        0xe CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
  .rodata.str1.4
-                0x10014610       0x54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014608       0x54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_84
-                0x10014610        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014608        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_78
-                0x1001461c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014614        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_60
-                0x10014628        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014620        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_54
-                0x10014634        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1001462c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_48
-                0x10014640        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014638        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_42
-                0x1001464c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014644        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_34
-                0x10014658        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10014650        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_26
-                0x10014664        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1001465c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata._ftoa.str1.4
-                0x10014670       0x15 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10014668       0x15 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
  .rodata._vsnprintf
-                0x10014670      0x19c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1001480c        0x4 
+                0x10014668      0x19c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10014804        0x4 
  .rodata.pow10.0
-                0x10014810       0x50 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10014808       0x50 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
  .rodata.crlf_str.0
-                0x10014860        0x2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10014862        0x2 
+                0x10014858        0x2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1001485a        0x2 
  .rodata._resetd_driver
-                0x10014864       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x1001485c       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.desc_ms_os_20
-                0x10014884       0xa6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- *fill*         0x1001492a        0x2 
+                0x1001487c       0xa6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ *fill*         0x10014922        0x2 
  .rodata.desc_bos
-                0x1001492c       0x21 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x1001492c                desc_bos
+                0x10014924       0x21 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10014924                desc_bos
  .rodata.str1.4
-                0x1001494d       0x13 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x1001494d        0x3 
+                0x10014945       0x13 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x10014945        0x3 
  .rodata.__bi_197.0
-                0x10014950        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10014948        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x1001495c       0x2a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10014954       0x2a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_str
-                0x1001495c       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10014954       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x10014974       0x54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1001496c       0x54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x100149c8       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x100149c0       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x100149da       0x14 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x100149d2       0x14 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x100149da       0x48 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x100149da        0x2 
+                0x100149d2       0x48 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x100149d2        0x2 
  .rodata.tud_task_ext
-                0x100149dc       0x8c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
- .rodata        0x10014a68       0x1c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
+                0x100149d4       0x8c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
+ .rodata        0x10014a60       0x1c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x10014a84       0x40 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10014a7c       0x40 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
  .rodata.dns_send.isra.0.str1.4
-                0x10014ac4       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+                0x10014abc       0x18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
  .rodata.dns_check_entry.str1.4
-                0x10014ac4       0x1f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+                0x10014abc       0x1f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
  .rodata.mem_free.str1.4
-                0x10014ac4       0xb6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+                0x10014abc       0xb6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
  .rodata.mem_trim.str1.4
-                0x10014ac4       0x49 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+                0x10014abc       0x49 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
  .rodata.mem_malloc.str1.4
-                0x10014ac4       0x5f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+                0x10014abc       0x5f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
  .rodata.memp_malloc_pool.str1.4
-                0x10014ac4       0x37 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014abc       0x37 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
  .rodata.memp_free_pool.str1.4
-                0x10014ac4       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014abc       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
  .rodata.memp_pools
-                0x10014ac4       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014ac4                memp_pools
+                0x10014abc       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014abc                memp_pools
  .rodata.memp_PBUF_POOL
-                0x10014ae8        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014ae8                memp_PBUF_POOL
+                0x10014ae0        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014ae0                memp_PBUF_POOL
  .rodata.memp_PBUF
-                0x10014af4        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014af4                memp_PBUF
+                0x10014aec        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014aec                memp_PBUF
  .rodata.memp_SYS_TIMEOUT
-                0x10014b00        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b00                memp_SYS_TIMEOUT
+                0x10014af8        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014af8                memp_SYS_TIMEOUT
  .rodata.memp_REASSDATA
-                0x10014b0c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b0c                memp_REASSDATA
+                0x10014b04        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b04                memp_REASSDATA
  .rodata.memp_TCP_SEG
-                0x10014b18        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b18                memp_TCP_SEG
+                0x10014b10        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b10                memp_TCP_SEG
  .rodata.memp_TCP_PCB_LISTEN
-                0x10014b24        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b24                memp_TCP_PCB_LISTEN
+                0x10014b1c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b1c                memp_TCP_PCB_LISTEN
  .rodata.memp_TCP_PCB
-                0x10014b30        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b30                memp_TCP_PCB
+                0x10014b28        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b28                memp_TCP_PCB
  .rodata.memp_UDP_PCB
-                0x10014b3c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b3c                memp_UDP_PCB
+                0x10014b34        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b34                memp_UDP_PCB
  .rodata.memp_RAW_PCB
-                0x10014b48        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
-                0x10014b48                memp_RAW_PCB
+                0x10014b40        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+                0x10014b40                memp_RAW_PCB
  .rodata.netif_do_set_ipaddr.isra.0.str1.4
-                0x10014b54       0x10 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
+                0x10014b4c       0x10 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
  .rodata.pbuf_free.part.0.str1.4
-                0x10014b54       0x2a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x2a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_alloc.str1.4
-                0x10014b54       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_realloc.str1.4
-                0x10014b54       0x65 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x65 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_add_header.str1.4
-                0x10014b54        0xa CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c        0xa CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_ref.str1.4
-                0x10014b54       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x12 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_cat.str1.4
-                0x10014b54       0x2d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x2d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_copy_partial_pbuf.str1.4
-                0x10014b54       0x33 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x33 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.pbuf_take.str1.4
-                0x10014b54       0x2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+                0x10014b4c       0x2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
  .rodata.tcp_close_shutdown_fin.str1.4
-                0x10014b54        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_free.str1.4
-                0x10014b54       0x11 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x11 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_update_rcv_ann_wnd.str1.4
-                0x10014b54       0x3e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x3e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_recved.str1.4
-                0x10014b54       0x26 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x26 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_slowtmr.str1.4
-                0x10014b54      0x1c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c      0x1c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_recv.str1.4
-                0x10014b54       0x27 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x27 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_pcb_remove.str1.4
-                0x10014b54       0x87 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x87 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_abandon.str1.4
-                0x10014b54       0x31 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x31 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_accept_null.str1.4
-                0x10014b54       0x1d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x1d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_close_shutdown.str1.4
-                0x10014b54       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_eff_send_mss_netif.str1.4
-                0x10014b54       0x27 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c       0x27 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_pcb_lists
-                0x10014b54       0x10 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
-                0x10014b54                tcp_pcb_lists
+                0x10014b4c       0x10 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b4c                tcp_pcb_lists
  .rodata.tcp_persist_backoff
-                0x10014b64        0x7 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
- *fill*         0x10014b6b        0x1 
+                0x10014b5c        0x7 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+ *fill*         0x10014b63        0x1 
  .rodata.tcp_backoff
-                0x10014b6c        0xd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+                0x10014b64        0xd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
  .rodata.tcp_create_segment.str1.4
-                0x10014b79       0x35 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x35 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_write.str1.4
-                0x10014b79      0x13e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71      0x13e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_split_unsent_seg.str1.4
-                0x10014b79       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_send_fin.str1.4
-                0x10014b79       0x88 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x88 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_rto_prepare.str1.4
-                0x10014b79       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rst.str1.4
-                0x10014b79       0x66 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x66 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_send_empty_ack.str1.4
-                0x10014b79       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_output.str1.4
-                0x10014b79       0x6b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x6b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_rexmit_rto_commit.str1.4
-                0x10014b79       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_keepalive.str1.4
-                0x10014b79       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x1b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcp_zero_window_probe.str1.4
-                0x10014b79       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+                0x10014b71       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
  .rodata.tcpip_tcp_timer.str1.4
-                0x10014b79       0x3d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+                0x10014b71       0x3d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
  .rodata.sys_timeouts_init.str1.4
-                0x10014b79       0x36 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
- *fill*         0x10014b79        0x3 
+                0x10014b71       0x36 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+ *fill*         0x10014b71        0x3 
  .rodata.lwip_cyclic_timers
-                0x10014b7c       0x30 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
-                0x10014b7c                lwip_cyclic_timers
+                0x10014b74       0x30 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+                0x10014b74                lwip_cyclic_timers
  .rodata.udp_sendto_if_src.str1.4
-                0x10014bac       0x2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
+                0x10014ba4       0x2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
  .rodata.dhcp_create_msg.str1.4
-                0x10014bac       0x40 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014ba4       0x40 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_inc_pcb_refcount.str1.4
-                0x10014bac       0x25 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014ba4       0x25 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_option_hostname.isra.0.str1.4
-                0x10014bac       0x95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014ba4       0x95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_recv.str1.4
-                0x10014bac       0x11 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014ba4       0x11 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_recv
-                0x10014bac      0x1e0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014ba4      0x1e0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_start.str1.4
-                0x10014d8c       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014d84       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.dhcp_network_changed_link_up.str1.4
-                0x10014d8c       0x14 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+                0x10014d84       0x14 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
  .rodata.etharp_raw.str1.4
-                0x10014d8c       0x85 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
+                0x10014d84       0x85 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
  .rodata.icmp_dest_unreach.str1.4
-                0x10014d8c       0x2c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
+                0x10014d84       0x2c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
  .rodata.ip_reass_free_complete_datagram.str1.4
-                0x10014d8c       0x7e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+                0x10014d84       0x7e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
  .rodata.ip4_frag.str1.4
-                0x10014d8c       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+                0x10014d84       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
  .rodata.ip4_output_if.str1.4
-                0x10014d8c       0x39 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
+                0x10014d84       0x39 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
  .rodata.ip_addr_broadcast
-                0x10014d8c        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-                0x10014d8c                ip_addr_broadcast
+                0x10014d84        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+                0x10014d84                ip_addr_broadcast
  .rodata.ip_addr_any
-                0x10014d90        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-                0x10014d90                ip_addr_any
+                0x10014d88        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+                0x10014d88                ip_addr_any
  .rodata.ethernet_output.str1.4
-                0x10014d94       0x31 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x10014d8c       0x31 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
  .rodata.ethzero
-                0x10014d94        0x6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
-                0x10014d94                ethzero
- *fill*         0x10014d9a        0x2 
+                0x10014d8c        0x6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x10014d8c                ethzero
+ *fill*         0x10014d92        0x2 
  .rodata.ethbroadcast
-                0x10014d9c        0x6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
-                0x10014d9c                ethbroadcast
+                0x10014d94        0x6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+                0x10014d94                ethbroadcast
  .rodata.cyw43_read_bytes.str1.4
-                0x10014da2       0x1a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10014d9a       0x1a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_write_bytes.str1.4
-                0x10014da2        0xd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
- *fill*         0x10014da2        0x2 
+                0x10014d9a        0xd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+ *fill*         0x10014d9a        0x2 
  .rodata.spi_gap01_sample0_program
-                0x10014da4        0x8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10014d9c        0x8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .rodata.spi_gap01_sample0_program_instructions
-                0x10014dac        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10014da4        0xc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_kso_set.str1.4
-                0x10014db8       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_sdpcm_poll_device.str1.4
-                0x10014db8       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_sdpcm_send_common.str1.4
-                0x10014db8       0x22 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x22 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_do_ioctl.part.0.str1.4
-                0x10014db8       0x53 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x53 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.reset_device_core.constprop.0.str1.4
-                0x10014db8       0x1a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x1a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_on.str1.4
-                0x10014db8       0x52 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x52 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_bus_init.str1.4
-                0x10014db8       0xea CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0xea CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_ll_wifi_join.str1.4
-                0x10014db8       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0       0x55 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.w43439A0_7_95_49_00_combined
-                0x10014db8    0x36fd8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10014db0    0x36fd8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.wifi_nvram_4343
-                0x1004bd90      0x2e7 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x1004c077        0x1 
- .rodata        0x1004c078       0x72 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1004bd88      0x2e7 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x1004c06f        0x1 
+ .rodata        0x1004c070       0x72 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.cyw43_cb_process_async_event.str1.4
-                0x1004c0ea       0x28 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
- *fill*         0x1004c0ea        0x2 
+                0x1004c0e2       0x28 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+ *fill*         0x1004c0e2        0x2 
  .rodata.cyw43_cb_process_async_event
-                0x1004c0ec       0xc8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1004c0e4       0xc8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.str1.4
-                0x1004c1b4       0x9e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1004c1ac       0x9e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.cyw43_async_event_name_table
-                0x1004c1b4      0x164 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1004c1ac      0x164 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.pio_claim_unused_sm.str1.4
-                0x1004c318       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
+                0x1004c310       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.dma_claim_unused_channel.str1.4
-                0x1004c318       0x1e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
+                0x1004c310       0x1e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
  .rodata.async_context_threadsafe_background_lock_check.str1.4
-                0x1004c318       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x1004c310       0x20 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .rodata.template
-                0x1004c318       0x38 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-                0x1004c350                        . = ALIGN (0x4)
+                0x1004c310       0x38 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x1004c348                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1004c350                        . = ALIGN (0x4)
+                0x1004c348                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1004c350                        __exidx_start = .
+                0x1004c348                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x1004c350                        __exidx_end = .
-                0x1004c350                        . = ALIGN (0x4)
-                0x1004c350                        __binary_info_start = .
+                0x1004c348                        __exidx_end = .
+                0x1004c348                        . = ALIGN (0x4)
+                0x1004c348                        __binary_info_start = .
 
-.binary_info    0x1004c350       0x24
+.binary_info    0x1004c348       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x1004c350        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c348        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr78
-                0x1004c354        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c34c        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr60
-                0x1004c358        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c350        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr54
-                0x1004c35c        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c354        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr48
-                0x1004c360        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c358        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr42
-                0x1004c364        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c35c        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr34
-                0x1004c368        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c360        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr26
-                0x1004c36c        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x1004c364        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr197
-                0x1004c370        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x1004c374                        __binary_info_end = .
+                0x1004c368        0x4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x1004c36c                        __binary_info_end = .
 
-.rel.dyn        0x1004c374        0x0
- .rel.iplt      0x1004c374        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x1004c374                        . = ALIGN (0x4)
+.rel.dyn        0x1004c36c        0x0
+ .rel.iplt      0x1004c36c        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x1004c36c                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -6010,7 +6010,7 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
  .uninitialized_data.rng_state
                 0x200000d0       0x10 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.obj
 
-.data           0x200000e0     0x16f0 load address 0x1004c374
+.data           0x200000e0     0x16f0 load address 0x1004c36c
                 0x200000e0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -6165,23 +6165,23 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x200017d0                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x200017d0        0x0 load address 0x1004da64
+                0x200017d0        0x0 load address 0x1004da5c
  .tm_clone_table
                 0x200017d0        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200017d0        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x200017d0        0x0 load address 0x1004da64
+.igot.plt       0x200017d0        0x0 load address 0x1004da5c
  .igot.plt      0x200017d0        0x0 C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x200017d0        0x0 load address 0x1004da64
+.tdata          0x200017d0        0x0 load address 0x1004da5c
                 0x200017d0                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x200017d0                        __tdata_end = .
                 0x200017d0                        PROVIDE (__data_end__ = .)
-                0x1004c374                        __etext = LOADADDR (.data)
+                0x1004c36c                        __etext = LOADADDR (.data)
 
-.tbss           0x200017d0        0x0 load address 0x1004da64
+.tbss           0x200017d0        0x0 load address 0x1004da5c
                 0x200017d0                        . = ALIGN (0x4)
                 0x200017d0                        __bss_start__ = .
                 0x200017d0                        __tls_base = .
@@ -6189,7 +6189,7 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *(.tcommon)
                 0x200017d0                        __tls_end = .
 
-.bss            0x200017d0     0xca24 load address 0x1004da64
+.bss            0x200017d0     0xca24 load address 0x1004da5c
                 0x200017d0                        . = ALIGN (0x4)
                 0x200017d0                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -6495,26 +6495,26 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *fill*         0x2000e1f3        0x1 
                 0x2000e1f4                        __bss_end__ = .
 
-.heap           0x2000e1f4      0x800 load address 0x1004da64
+.heap           0x2000e1f4      0x800 load address 0x1004da5c
                 0x2000e1f4                        __end__ = .
                 0x2000e1f4                        end = __end__
  *(.heap*)
  .heap          0x2000e1f4      0x800 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x1004da64
+.scratch_x      0x20040000        0x0 load address 0x1004da5c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x1004da64                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1004da5c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x1004da64
+.scratch_y      0x20041000        0x0 load address 0x1004da5c
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x1004da64                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1004da5c                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -6523,9 +6523,9 @@ LOAD C:/Users/ferre/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
 
-.flash_end      0x1004da64        0x0
+.flash_end      0x1004da5c        0x0
  *(.embedded_end_block*)
-                0x1004da64                        PROVIDE (__flash_binary_end = .)
+                0x1004da5c                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -7069,100 +7069,100 @@ LOAD linker stubs
  .comment       0x00000045       0x46 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.obj
  .comment       0x00000045       0x46 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
 
-.debug_info     0x00000000    0x7f15f
+.debug_info     0x00000000    0x7f157
  .debug_info    0x00000000      0x451 CMakeFiles/final_project_embarcatech.dir/main.c.obj
  .debug_info    0x00000451     0x14da CMakeFiles/final_project_embarcatech.dir/src/joystick.c.obj
- .debug_info    0x0000192b      0x9da CMakeFiles/final_project_embarcatech.dir/src/oled_display.c.obj
- .debug_info    0x00002305     0x1b0b CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
- .debug_info    0x00003e10      0xc91 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
- .debug_info    0x00004aa1     0x242d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x00006ece      0x129 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.obj
- .debug_info    0x00006ff7      0x1bf CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_info    0x000071b6      0x9a1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.obj
- .debug_info    0x00007b57      0x45c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00007fb3      0x245 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_info    0x000081f8     0x220f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x0000a407     0x14f0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.obj
- .debug_info    0x0000b8f7      0x15f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x0000ba56     0x27f1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.obj
- .debug_info    0x0000e247      0x308 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.obj
- .debug_info    0x0000e54f     0x5036 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
- .debug_info    0x00013585     0x2b13 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x00016098     0x2991 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x00018a29      0x4e5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x00018f0e      0x8af CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x000197bd      0x248 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_info    0x00019a05      0x678 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x0001a07d      0x1d0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x0001a24d      0x21a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x0001a467      0x795 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_info    0x0001abfc      0x781 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_info    0x0001b37d       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x0001b3a0       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_info    0x0001b3c3       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_info    0x0001b3e6      0x2c4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_info    0x0001b6aa       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_info    0x0001b6ce       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x0001b6f2       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_info    0x0001b715      0x2b0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_info    0x0001b9c5      0x3e4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
- .debug_info    0x0001bda9       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x0001bdcc      0x2e2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_info    0x0001c0ae     0x22f2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x0001e3a0       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_info    0x0001e3c3      0xb54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_info    0x0001ef17     0x1c52 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x00020b69      0xa6f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_info    0x000215d8     0x1eef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_info    0x000234c7      0x686 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_info    0x00023b4d      0x201 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x00023d4e     0x12f4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x00025042     0x2af8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_info    0x00027b3a     0x1158 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_info    0x00028c92     0x49a8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_info    0x0002d63a      0xb42 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_info    0x0002e17c     0x1fae CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_info    0x0003012a     0x1713 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.obj
- .debug_info    0x0003183d     0x1e8c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.obj
- .debug_info    0x000336c9     0x283d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_info    0x00035f06      0xbe9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_lwip/lwip_nosys.c.obj
- .debug_info    0x00036aef      0xa06 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_base.c.obj
- .debug_info    0x000374f5     0x16fa CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.obj
- .debug_info    0x00038bef      0x12e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/init.c.obj
- .debug_info    0x00038d1d      0x5b3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/def.c.obj
- .debug_info    0x000392d0     0x1b3d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
- .debug_info    0x0003ae0d      0x8ca CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/inet_chksum.c.obj
- .debug_info    0x0003b6d7      0x52a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ip.c.obj
- .debug_info    0x0003bc01      0xa37 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
- .debug_info    0x0003c638      0x8f5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
- .debug_info    0x0003cf2d     0x16c2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
- .debug_info    0x0003e5ef     0x3419 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
- .debug_info    0x00041a08     0x1543 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
- .debug_info    0x00042f4b      0x203 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/stats.c.obj
- .debug_info    0x0004314e     0x3b2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
- .debug_info    0x00046c7c     0x2555 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
- .debug_info    0x000491d1     0x3640 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
- .debug_info    0x0004c811     0x1364 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
- .debug_info    0x0004db75     0x1733 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
- .debug_info    0x0004f2a8     0x3cab CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
- .debug_info    0x00052f53     0x19b5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
- .debug_info    0x00054908      0xf96 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
- .debug_info    0x0005589e     0x15b6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
- .debug_info    0x00056e54     0x133b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
- .debug_info    0x0005818f      0x8c8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
- .debug_info    0x00058a57      0x9e9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
- .debug_info    0x00059440     0x2283 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
- .debug_info    0x0005b6c3      0xad0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
- .debug_info    0x0005c193     0x7401 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
- .debug_info    0x00063594     0xc4cc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
- .debug_info    0x0006fa60      0xfe4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_lwip.c.obj
- .debug_info    0x00070a44     0x524b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
- .debug_info    0x00075c8f     0x305c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
- .debug_info    0x00078ceb      0xa26 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
- .debug_info    0x00079711     0x1fa0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
- .debug_info    0x0007b6b1     0x19de CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
- .debug_info    0x0007d08f     0x1cd4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.obj
- .debug_info    0x0007ed63      0x3fc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_info    0x0000192b      0x9d2 CMakeFiles/final_project_embarcatech.dir/src/oled_display.c.obj
+ .debug_info    0x000022fd     0x1b0b CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
+ .debug_info    0x00003e08      0xc91 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
+ .debug_info    0x00004a99     0x242d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00006ec6      0x129 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.obj
+ .debug_info    0x00006fef      0x1bf CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_info    0x000071ae      0x9a1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.obj
+ .debug_info    0x00007b4f      0x45c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00007fab      0x245 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_info    0x000081f0     0x220f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000a3ff     0x14f0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.obj
+ .debug_info    0x0000b8ef      0x15f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000ba4e     0x27f1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000e23f      0x308 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.obj
+ .debug_info    0x0000e547     0x5036 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
+ .debug_info    0x0001357d     0x2b13 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x00016090     0x2991 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00018a21      0x4e5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00018f06      0x8af CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x000197b5      0x248 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_info    0x000199fd      0x678 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x0001a075      0x1d0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0001a245      0x21a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0001a45f      0x795 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_info    0x0001abf4      0x781 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_info    0x0001b375       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x0001b398       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_info    0x0001b3bb       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_info    0x0001b3de      0x2c4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_info    0x0001b6a2       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_info    0x0001b6c6       0x24 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x0001b6ea       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_info    0x0001b70d      0x2b0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_info    0x0001b9bd      0x3e4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
+ .debug_info    0x0001bda1       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x0001bdc4      0x2e2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_info    0x0001c0a6     0x22f2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0001e398       0x23 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_info    0x0001e3bb      0xb54 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_info    0x0001ef0f     0x1c52 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x00020b61      0xa6f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_info    0x000215d0     0x1eef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_info    0x000234bf      0x686 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_info    0x00023b45      0x201 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x00023d46     0x12f4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x0002503a     0x2af8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_info    0x00027b32     0x1158 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_info    0x00028c8a     0x49a8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_info    0x0002d632      0xb42 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_info    0x0002e174     0x1fae CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_info    0x00030122     0x1713 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+ .debug_info    0x00031835     0x1e8c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.obj
+ .debug_info    0x000336c1     0x283d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_info    0x00035efe      0xbe9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+ .debug_info    0x00036ae7      0xa06 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_base.c.obj
+ .debug_info    0x000374ed     0x16fa CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.obj
+ .debug_info    0x00038be7      0x12e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/init.c.obj
+ .debug_info    0x00038d15      0x5b3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/def.c.obj
+ .debug_info    0x000392c8     0x1b3d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+ .debug_info    0x0003ae05      0x8ca CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/inet_chksum.c.obj
+ .debug_info    0x0003b6cf      0x52a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ip.c.obj
+ .debug_info    0x0003bbf9      0xa37 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+ .debug_info    0x0003c630      0x8f5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+ .debug_info    0x0003cf25     0x16c2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
+ .debug_info    0x0003e5e7     0x3419 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+ .debug_info    0x00041a00     0x1543 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
+ .debug_info    0x00042f43      0x203 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/stats.c.obj
+ .debug_info    0x00043146     0x3b2e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+ .debug_info    0x00046c74     0x2555 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+ .debug_info    0x000491c9     0x3640 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+ .debug_info    0x0004c809     0x1364 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+ .debug_info    0x0004db6d     0x1733 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
+ .debug_info    0x0004f2a0     0x3cab CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+ .debug_info    0x00052f4b     0x19b5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
+ .debug_info    0x00054900      0xf96 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
+ .debug_info    0x00055896     0x15b6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+ .debug_info    0x00056e4c     0x133b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
+ .debug_info    0x00058187      0x8c8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+ .debug_info    0x00058a4f      0x9e9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+ .debug_info    0x00059438     0x2283 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+ .debug_info    0x0005b6bb      0xad0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+ .debug_info    0x0005c18b     0x7401 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+ .debug_info    0x0006358c     0xc4cc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+ .debug_info    0x0006fa58      0xfe4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_lwip.c.obj
+ .debug_info    0x00070a3c     0x524b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+ .debug_info    0x00075c87     0x305c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
+ .debug_info    0x00078ce3      0xa26 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
+ .debug_info    0x00079709     0x1fa0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+ .debug_info    0x0007b6a9     0x19de CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+ .debug_info    0x0007d087     0x1cd4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.obj
+ .debug_info    0x0007ed5b      0x3fc CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
 
 .debug_abbrev   0x00000000    0x12a53
  .debug_abbrev  0x00000000      0x143 CMakeFiles/final_project_embarcatech.dir/main.c.obj
@@ -7628,100 +7628,100 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000975c       0x2b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
 
-.debug_line     0x00000000    0x53791
+.debug_line     0x00000000    0x53701
  .debug_line    0x00000000      0x33d CMakeFiles/final_project_embarcatech.dir/main.c.obj
- .debug_line    0x0000033d      0xb9f CMakeFiles/final_project_embarcatech.dir/src/joystick.c.obj
- .debug_line    0x00000edc      0x47d CMakeFiles/final_project_embarcatech.dir/src/oled_display.c.obj
- .debug_line    0x00001359     0x1511 CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
- .debug_line    0x0000286a      0x444 CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
- .debug_line    0x00002cae     0x1ca4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00004952      0x262 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.obj
- .debug_line    0x00004bb4      0x28a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_line    0x00004e3e      0x8f4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.obj
- .debug_line    0x00005732      0x4d8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00005c0a      0x3ba CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_line    0x00005fc4     0x1775 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00007739      0xe82 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.obj
- .debug_line    0x000085bb      0x2e5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000088a0     0x1b45 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000a3e5      0x419 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x0000a7fe     0x3556 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
- .debug_line    0x0000dd54     0x1d16 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000fa6a     0x210c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00011b76      0x500 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00012076      0x7b4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0001282a      0x344 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_line    0x00012b6e      0x460 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x00012fce      0x34d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0001331b      0x319 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00013634      0x542 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_line    0x00013b76      0x569 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_line    0x000140df      0x107 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x000141e6      0x2a9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_line    0x0001448f      0x44d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_line    0x000148dc      0x50a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_line    0x00014de6       0x5d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_line    0x00014e43       0x61 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x00014ea4      0x3c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_line    0x0001526a      0x3c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_line    0x00015630      0x2a4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
- .debug_line    0x000158d4       0x94 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x00015968      0x1f5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_line    0x00015b5d     0x1d18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x00017875       0xa5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_line    0x0001791a      0x870 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_line    0x0001818a     0x14d1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0001965b      0x51c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x00019b77     0x11b6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x0001ad2d      0x3c1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x0001b0ee      0x667 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x0001b755      0xbec CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x0001c341     0x1e9f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x0001e1e0      0xcbd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x0001ee9d     0x28a6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00021743      0x6ef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00021e32     0x10c2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x00022ef4      0xad3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.obj
- .debug_line    0x000239c7     0x123d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00024c04     0x1a67 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x0002666b      0x6d3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_lwip/lwip_nosys.c.obj
- .debug_line    0x00026d3e      0x87d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_base.c.obj
- .debug_line    0x000275bb     0x1074 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.obj
- .debug_line    0x0002862f      0x1f2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/init.c.obj
- .debug_line    0x00028821      0x58b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/def.c.obj
- .debug_line    0x00028dac     0x1af9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
- .debug_line    0x0002a8a5      0x760 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/inet_chksum.c.obj
- .debug_line    0x0002b005      0x1ea CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ip.c.obj
- .debug_line    0x0002b1ef      0xac3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
- .debug_line    0x0002bcb2      0x629 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
- .debug_line    0x0002c2db     0x1240 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
- .debug_line    0x0002d51b     0x2021 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
- .debug_line    0x0002f53c      0xcd4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
- .debug_line    0x00030210      0x17e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/stats.c.obj
- .debug_line    0x0003038e     0x3049 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
- .debug_line    0x000333d7     0x2367 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
- .debug_line    0x0003573e     0x24bf CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
- .debug_line    0x00037bfd      0xb15 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
- .debug_line    0x00038712     0x1205 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
- .debug_line    0x00039917     0x2f3a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
- .debug_line    0x0003c851     0x1849 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
- .debug_line    0x0003e09a      0x7a6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
- .debug_line    0x0003e840     0x1087 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
- .debug_line    0x0003f8c7      0xe4a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
- .debug_line    0x00040711      0x8ed CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
- .debug_line    0x00040ffe      0x517 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
- .debug_line    0x00041515      0xf21 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
- .debug_line    0x00042436      0x6d9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
- .debug_line    0x00042b0f     0x3aef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
- .debug_line    0x000465fe     0x4e66 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
- .debug_line    0x0004b464      0x5e0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_lwip.c.obj
- .debug_line    0x0004ba44     0x2438 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
- .debug_line    0x0004de7c     0x1d95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
- .debug_line    0x0004fc11      0x740 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
- .debug_line    0x00050351      0xe95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
- .debug_line    0x000511e6      0xe91 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
- .debug_line    0x00052077     0x131d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.obj
- .debug_line    0x00053394      0x3fd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_line    0x0000033d      0xb57 CMakeFiles/final_project_embarcatech.dir/src/joystick.c.obj
+ .debug_line    0x00000e94      0x47d CMakeFiles/final_project_embarcatech.dir/src/oled_display.c.obj
+ .debug_line    0x00001311     0x1511 CMakeFiles/final_project_embarcatech.dir/src/ssd1306.c.obj
+ .debug_line    0x00002822      0x3fc CMakeFiles/final_project_embarcatech.dir/src/wifi.c.obj
+ .debug_line    0x00002c1e     0x1ca4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x000048c2      0x262 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.obj
+ .debug_line    0x00004b24      0x28a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_line    0x00004dae      0x8f4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.obj
+ .debug_line    0x000056a2      0x4d8 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00005b7a      0x3ba CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_line    0x00005f34     0x1775 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000076a9      0xe82 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.obj
+ .debug_line    0x0000852b      0x2e5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00008810     0x1b45 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000a355      0x419 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x0000a76e     0x3556 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.obj
+ .debug_line    0x0000dcc4     0x1d16 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000f9da     0x210c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00011ae6      0x500 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00011fe6      0x7b4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x0001279a      0x344 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_line    0x00012ade      0x460 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x00012f3e      0x34d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x0001328b      0x319 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x000135a4      0x542 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_line    0x00013ae6      0x569 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_line    0x0001404f      0x107 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x00014156      0x2a9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_line    0x000143ff      0x44d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_line    0x0001484c      0x50a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_line    0x00014d56       0x5d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_line    0x00014db3       0x61 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x00014e14      0x3c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_line    0x000151da      0x3c6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_line    0x000155a0      0x2a4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.obj
+ .debug_line    0x00015844       0x94 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x000158d8      0x1f5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_line    0x00015acd     0x1d18 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x000177e5       0xa5 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_line    0x0001788a      0x870 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_line    0x000180fa     0x14d1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x000195cb      0x51c CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x00019ae7     0x11b6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x0001ac9d      0x3c1 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0001b05e      0x667 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x0001b6c5      0xbec CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x0001c2b1     0x1e9f CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x0001e150      0xcbd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x0001ee0d     0x28a6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x000216b3      0x6ef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00021da2     0x10c2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x00022e64      0xad3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+ .debug_line    0x00023937     0x123d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00024b74     0x1a67 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x000265db      0x6d3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+ .debug_line    0x00026cae      0x87d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_base.c.obj
+ .debug_line    0x0002752b     0x1074 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_rand/rand.c.obj
+ .debug_line    0x0002859f      0x1f2 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/init.c.obj
+ .debug_line    0x00028791      0x58b CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/def.c.obj
+ .debug_line    0x00028d1c     0x1af9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/dns.c.obj
+ .debug_line    0x0002a815      0x760 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/inet_chksum.c.obj
+ .debug_line    0x0002af75      0x1ea CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ip.c.obj
+ .debug_line    0x0002b15f      0xac3 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/mem.c.obj
+ .debug_line    0x0002bc22      0x629 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/memp.c.obj
+ .debug_line    0x0002c24b     0x1240 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/netif.c.obj
+ .debug_line    0x0002d48b     0x2021 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/pbuf.c.obj
+ .debug_line    0x0002f4ac      0xcd4 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/raw.c.obj
+ .debug_line    0x00030180      0x17e CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/stats.c.obj
+ .debug_line    0x000302fe     0x3049 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp.c.obj
+ .debug_line    0x00033347     0x2367 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_in.c.obj
+ .debug_line    0x000356ae     0x24bf CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/tcp_out.c.obj
+ .debug_line    0x00037b6d      0xb15 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/timeouts.c.obj
+ .debug_line    0x00038682     0x1205 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/udp.c.obj
+ .debug_line    0x00039887     0x2f3a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/dhcp.c.obj
+ .debug_line    0x0003c7c1     0x1849 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/etharp.c.obj
+ .debug_line    0x0003e00a      0x7a6 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/icmp.c.obj
+ .debug_line    0x0003e7b0     0x1087 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+ .debug_line    0x0003f837      0xe4a CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4.c.obj
+ .debug_line    0x00040681      0x8ed CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+ .debug_line    0x00040f6e      0x517 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/lwip/src/netif/ethernet.c.obj
+ .debug_line    0x00041485      0xf21 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+ .debug_line    0x000423a6      0x6d9 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+ .debug_line    0x00042a7f     0x3aef CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+ .debug_line    0x0004656e     0x4e66 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.obj
+ .debug_line    0x0004b3d4      0x5e0 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_lwip.c.obj
+ .debug_line    0x0004b9b4     0x2438 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+ .debug_line    0x0004ddec     0x1d95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pio/pio.c.obj
+ .debug_line    0x0004fb81      0x740 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_dma/dma.c.obj
+ .debug_line    0x000502c1      0xe95 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+ .debug_line    0x00051156      0xe91 CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+ .debug_line    0x00051fe7     0x131d CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.obj
+ .debug_line    0x00053304      0x3fd CMakeFiles/final_project_embarcatech.dir/C_/Users/ferre/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_adc/adc.c.obj
 
 .debug_str      0x00000000    0x104ca
  .debug_str     0x00000000    0x104ca CMakeFiles/final_project_embarcatech.dir/main.c.obj

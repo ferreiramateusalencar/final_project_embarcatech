@@ -6,7 +6,6 @@
 #include "inc/joystick.h"
 #include "inc/oled_display.h"
 #include "inc/wifi.h"
-#include "inc/sensor_data.h"
 
 // Variáveis globais para armazenar os dados do sensor
 float temperatura = 0;

@@ -1,9 +1,11 @@
 #include "inc/joystick.h"
-#include "inc/sensor_data.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
 #include "hardware/gpio.h"
+
+extern float temperatura;
+extern float umidade;
 
 // Definição dos pinos dos LEDs RGB
 #define RED_PIN 13

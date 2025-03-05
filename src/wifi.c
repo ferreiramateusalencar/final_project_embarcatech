@@ -6,7 +6,6 @@
 #include "lwip/tcp.h"
 #include "./lib/lwipopts.h"
 #include "./inc/wifi.h"
-#include "./inc/sensor_data.h"
 #include "./inc/wifi_credentials.h"
 
 extern float temperatura;
