@@ -66,5 +66,15 @@
             "preLaunchTask": "Flash",
             "svdPath": "${userHome}/.pico-sdk/sdk/2.1.1/src/${command:raspberry-pi-pico.getChip}/hardware_regs/${command:raspberry-pi-pico.getChipUppercase}.svd"
         },
+        {
+            "name": "Wokwi GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/your-firmware.elf",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/local/bin/xtensa-esp32-elf-gdb",
+            "miDebuggerServerAddress": "localhost:3333"
+        },
     ]
 }

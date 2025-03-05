@@ -35,11 +35,9 @@ int main() {
 
     while (1) {
         // Processa os dados do joystick
-        printf("Processando dados do joystick...\n");
         process_joystick_data();
 
         // Atualiza a tela OLED com os dados de temperatura, umidade e status
-        printf("Atualizando display OLED...\n");
         oled_display_update();
 
         // Aguarda um curto período antes da próxima leitura

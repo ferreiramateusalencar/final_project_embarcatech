@@ -58,7 +58,7 @@ add_executable(final_project_embarcatech
 )
 
 pico_set_program_name(final_project_embarcatech "final_project_embarcatech")
-pico_set_program_version(final_project_embarcatech "0.1")
+pico_set_program_version(final_project_embarcatech "1.0")
 
 # Modifica as linhas abaixo para habilitar/desabilitar saída via UART/USB
 pico_enable_stdio_uart(final_project_embarcatech 0)

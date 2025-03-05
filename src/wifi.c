@@ -62,11 +62,22 @@ void wifi_init() {
         return;
     }
 
-    if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASS, CYW43_AUTH_WPA2_AES_PSK, 10000)) {
+    if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 10000)) {
         printf("Falha ao conectar ao Wi-Fi\n");
         return;
     }
 
     printf("Conectado ao Wi-Fi\n");
     start_http_server();
+}
+
+// Função para atualizar os dados de temperatura e umidade
+void wifi_update_data(int nova_temperatura, int nova_umidade) {
+    temperatura = nova_temperatura;
+    umidade = nova_umidade;
+}
+
+// Função para limpar recursos do Wi-Fi
+void wifi_cleanup() {
+    cyw43_arch_deinit();
 }
