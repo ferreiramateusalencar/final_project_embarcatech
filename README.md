@@ -2,7 +2,7 @@
 <h1 align="center"><img align="center" style="border-radius: 100%;" src="https://moodle.embarcatech.cepedi.org.br/pluginfile.php/1/theme_moove/logo/1733422525/Group%20658.png" width="300px;" alt=""><br>Projeto FInal Embarcatech</h1>
 
 <p align="center">
-   Este projeto utiliza um Raspberry Pi Pico (RP2040) para criar uma interface interativa com um joystick, uma tela OLED e um LED RGB. O objetivo principal é ler a posição do joystick, que simula um sensor DHT11 (onde o eixo Y do joystick simula o sensor de Temperatura e o eixo X o sensor de umidade) e enviar essas informações para o Display Oled SDD 1306, além do envio das infomações ao monitor serial via UART e ao navegador via Wi-Fi.
+   Este projeto utiliza um Raspberry Pi Pico W (RP2040) para criar uma interface interativa com um joystick, uma tela OLED e um LED RGB. O objetivo principal é ler a posição do joystick, que simula um sensor DHT11 (onde o eixo Y do joystick simula o sensor de Temperatura e o eixo X o sensor de umidade) e enviar essas informações para o Display Oled SDD 1306, além do envio das informações ao monitor serial via UART e ao navegador via Wi-Fi.
 </p>
 
 <h4 align="center">
@@ -15,7 +15,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
-   * [Layout Repositorio Github](#-layout-repositorio-github)
+   * [Layout repositório Github](#-layout-repositório-github)
    * [Funcionalidades](#-Funcionalidades)
    * [Como executar o projeto](#-como-executar-o-projeto)
    * [Imagens do Projeto](#-imagens-do-projeto)
@@ -37,7 +37,7 @@ O projeto é organizado da seguinte forma:
 ```
 final_project_embarcatech
 ├── .vscode                   # Configurações do Visual Studio Code para o projeto (extensões, tarefas, etc.)
-├── assets                    # Pasta para armazenar recursos estáticos do projeto (imagens, vódeos, etc.)
+├── assets                    # Pasta para armazenar recursos estáticos do projeto (imagens, vídeos, etc.)
 ├── bin                       # Pasta onde os binários compilados serão armazenados
 ├── inc                       # Pasta com arquivos temporários gerados no Compile
 ├── inc                       # Diretório para arquivos de cabeçalho (.h)
@@ -78,6 +78,12 @@ final_project_embarcatech
 
 ---
 
+## 📄 Documentação de avaliação do projeto para o Embarcatech TIC37
+
+<a href="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/papers/U7T_TIC370101727_MAF.pdf">Documento do projeto<a/>
+
+---
+
 ## 🚀 Como executar o projeto
 
 💡Siga as instruções abaixo para configurar, compilar e executar o programa.
@@ -92,9 +98,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) com a extensão [Raspberry](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico)  e usar o simulador web [Wokwi](https://wokwi.com) (ou a extensão do Vscode [Wokwi Simulator](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode))
 
-### 🎲 Dowload do Projeto
+### 🎲 download do Projeto
 
-#### Dowload do Projeto no Desktop
+#### download do Projeto no Desktop
 - Opção 1:
   - Abra o terminal de comando Git Bash 
   - Clone o repositório do GitHub com o comando:
@@ -102,8 +108,8 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone https://github.com/ferreiramateusalencar/final_project_embarcatech.git
 ```
 - Opção 2:
-  - No repósitorio [Animation-BitDogLab](https://github.com/ferreiramateusalencar/final_project_embarcatech.git) aperte o Botão <i><>code</i>
-  - Aperte a opção <i>Dowload ZIP</i>
+  - No repositório [Animation-BitDogLab](https://github.com/ferreiramateusalencar/final_project_embarcatech.git) aperte o Botão <i><>code</i>
+  - Aperte a opção <i>download ZIP</i>
 
 
 ### 🎲 Rodando a Animação no Wokwi
@@ -111,10 +117,10 @@ $ git clone https://github.com/ferreiramateusalencar/final_project_embarcatech.g
 #### Wokwi Web
 - Entre no navegador e digite [Wokwi.com]()
 - Faça Upload dos Arquivos <i>diagram.json</i>
-- Faça upload do aquivo main <i>main.c</i> e dos arquivos das pastas <i>inc/</i>, <i>lib/</i> e <i>src/</i>
+- Faça upload do arquivo main <i>main.c</i> e dos arquivos das pastas <i>inc/</i>, <i>lib/</i> e <i>src/</i>
 
 #### Extensão Wokwi
-- Abra o Visual Studio
+- Abra o Visual Studio Code
 - Na aba da extensão [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico), aperte para Importar o projeto
 - Compile o projeto
 - crie um arquivo (caso não tenha no projeto) <i>wokwi.toml</i> e digite o código:
@@ -131,11 +137,11 @@ rfc2217ServerPort = 4000
 ### 🎲 Rodando as Animações na placa BitdogLab
 
 #### Placa BitDogLab
-- Através de um cabo USB conecte a placa ao seu Disposito
+- Através de um cabo USB conecte a placa ao seu dispositivo
 - Aperte o Botão Bootsel e Reset 
 
 #### VsCode Studio
-- Abra o Visual Studio
+- Abra o Visual Studio Code
 - Na aba da extensão [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico), aperte para Importar o projeto
 - Compile o projeto
 - Entre na pasta <i>build/</i>
@@ -146,20 +152,29 @@ rfc2217ServerPort = 4000
 
 ## 🎥 Imagens do Projeto
 
-### 💿 Diagrama Visual do Projeto
+### 💿 Diagrama Visual do Projeto no Wokwi
 <p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/diagram.png"></p>
 
-### 💿 Video do Projeto na Extensão Wokwi
+### 💿 Monitor Serial
+<p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/image_demonstration_HTTP.jpg"></p>
+
+### 💿 Foto da BitDogLab com o firmware do projeto
+<p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/board_demonstration_BitDogLab.jpg"></p>
+
+### 💿 Video do Projeto
 
 
 
-https://github.com/user-attachments/assets/1cb5ff3f-3bc1-4b1f-a468-651a5e83f5a7
+
+
+
+https://github.com/user-attachments/assets/b1a8d7e9-92f7-416e-b1aa-07604f263ffa
 
 
 
 
 
-- Dowload HD video completo: https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/video/demonstration.mp4
+- download do vídeo completo em Alta qualidade (HD): https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/video/demonstration.mp4
 
 ---
 
