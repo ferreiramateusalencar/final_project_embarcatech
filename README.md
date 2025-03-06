@@ -159,7 +159,7 @@ rfc2217ServerPort = 4000
 <p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/image_demonstration_HTTP.jpg"></p>
 
 ### 💿 Foto da BitDogLab com o firmware do projeto
-<p align="center"><img width="700" height="400" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/board_demonstration_BitDogLab.jpg"></p>
+<p align="center"><img width="400" height="700" src="https://github.com/ferreiramateusalencar/final_project_embarcatech/blob/main/assets/image/board_demonstration_BitDogLab.jpg"></p>
 
 ### 💿 Video do Projeto
 
